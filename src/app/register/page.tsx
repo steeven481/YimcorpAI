@@ -317,26 +317,6 @@ export default function RegisterPage() {
                                 )}
                             </div>
 
-                            {/* Terms */}
-                            <div className="flex items-start space-x-3">
-                                <input
-                                    type="checkbox"
-                                    id="terms"
-                                    className="mt-1 h-4 w-4 rounded border-gray-600 bg-gray-700 text-emerald-500 focus:ring-2 focus:ring-emerald-500/20 focus:outline-none"
-                                    required
-                                    disabled={loading}
-                                />
-                                <label htmlFor="terms" className="text-sm text-gray-400">
-                                    accepte les{' '}
-                                    <Link href="" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                                        conditions utilisation
-                                    </Link>{' '}
-                                    et la{' '}
-                                    <Link href="" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                                        politique de confidentialité
-                                    </Link>
-                                </label>
-                            </div>
 
                             {/* Error Message */}
                             {error && (

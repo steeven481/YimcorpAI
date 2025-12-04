@@ -1,7 +1,8 @@
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
-const genAI = new GoogleGenerativeAI('AIzaSyCageOjan_3y5ZOBbhhXJz3B2wrRXQBrXo')
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_API_KEY!)
 
+console.log(process.env.GOOGLE_GEMINI_API_KEY)
 export const model = genAI.getGenerativeModel({
     model: "gemini-flash-latest",
     generationConfig: {
