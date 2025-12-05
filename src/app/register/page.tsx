@@ -89,8 +89,6 @@ export default function RegisterPage() {
                     setError('Cet email est déjà enregistré. Essayez de vous connecter à la place.')
                 } else if (error.message.includes('password')) {
                     setError('Mot de passe trop faible. Utilisez au moins 8 caractères avec majuscules, minuscules et chiffres.')
-                } else if (error.message.includes('email')) {
-                    setError('Veuillez entrer une adresse email valide.')
                 } else {
                     setError(error.message || 'Une erreur est survenue lors de l\'inscription.')
                 }
